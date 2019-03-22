@@ -40,6 +40,17 @@
             </form>
             <div class="form-group" id="converted_rate">
                 <?php
+
+function currencyConverter ($from_Currency, $to_Currency) {
+    echo "Starting conversion ...";
+    $from_Currency = urlencode(strtoupper($from_Currency));
+    $to_Currency = urlencode(strtoupper($to_Currency));
+    $url = file_get_contents('http://free.currencyconverterapi.com/api/v6/convert?q=' . $from_Currency . '_' . $to_Currency . '&compact=ultra');
+    $json = json_decode($url, true);
+    echo "<br>";
+    return $json[$from_Currency . '_' . $to_Currency];
+}
+
 if(isset($_POST['convert'])) {
     $from_currency = trim($_POST['from_currency']);
     $to_currency = trim($_POST['to_currency']);
@@ -47,15 +58,16 @@ if(isset($_POST['convert'])) {
     // Convert function
     $from_Currency = urlencode($from_currency); // get hexcode
 	$to_Currency = urlencode($to_currency);	 // get hexcode
-	$get = file_get_contents("https://www.google.com/search?a=1&from=$from_Currency&to=$to_Currency");  
-	$get = explode("<span class=bld>",$get);
-	$get = explode("</span>",$get[1]);
-	$rate= preg_replace("/[^0-9\.]/", null, $get[0]);
-	$converted_amount = $amount*$rate;
-	$data = array( 'rate' => $rate, 'converted_amount' =>$converted_amount, 'from_Currency' => strtoupper($from_Currency), 'to_Currency' => strtoupper($to_Currency));
+	//$get = file_get_contents("https://free.currencyconverterapi.com/=$from_Currency+to+$toCurrency");  
+	//$get = explode("<span class=bld>",$get);
+	//$get = explode("</span>",$get[1]);
+	//$rate= preg_replace("/[^0-9\.]/", null, $get[0]);
+	//$converted_amount = $amount*$rate;
+	//$data = array( 'rate' => $rate, 'converted_amount' =>$converted_amount, 'from_Currency' => strtoupper($from_Currency), 'to_Currency' => strtoupper($to_Currency));
     // Set conversion
-    $converted_currency=echo json_encode( $data );
+    $converted_currency=currencyConverter($from_Currency, $to_Currency);
     // Print outout
+    echo "...conversion done. <br> Result: <br>";
     echo $converted_currency;
 }
                 ?>

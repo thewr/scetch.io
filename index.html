@@ -18,11 +18,9 @@
 	</form>
 
   </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</body>
-	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
 <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>	
 <script>
   // Initialize Firebase
   var config = {
@@ -34,6 +32,9 @@
     messagingSenderId: "533687143173"
   };
 firebase.initializeApp(config);
+	
+const db = firebase.firestore();
+db.settings({ timestampsInSnapshots: true }); 	
 	
 function saveToFirebase(email) {
     var emailObject = {
@@ -47,12 +48,13 @@ function saveToFirebase(email) {
             console.log('error' + error);
             error(); // some error method
         });
+
 }
 
 saveToFirebase(email);
 	
 	
 </script>
-	
+</body>	
 </html>
 

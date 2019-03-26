@@ -15,7 +15,7 @@ function renderCafe(doc){
     li.appendChild(name);
     li.appendChild(amount);
 
-    cafeList.appendChild(li);
+    itemList.appendChild(li);
 }
 
 // getting data

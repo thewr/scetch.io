@@ -1,5 +1,5 @@
-const cafeList = document.querySelector('#cafe-list');
-const form = document.querySelector('#add-cafe-form');
+const itemList = document.querySelector('#item-list');
+const form = document.querySelector('#add-item-form');
 
 
 // create element & render cafe
@@ -19,7 +19,7 @@ function renderCafe(doc){
 }
 
 // getting data
-db.collection('cafes').get().then(snapshot => {
+db.collection('times').get().then(snapshot => {
     snapshot.docs.forEach(doc => {
         renderCafe(doc);
     });
@@ -28,7 +28,7 @@ db.collection('cafes').get().then(snapshot => {
 // saving data
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    db.collection('cafes').add({
+    db.collection('times').add({
         name: form.name.value,
         amount: form.amount.value
     });

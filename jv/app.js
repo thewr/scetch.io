@@ -19,7 +19,7 @@ function renderCafe(doc){
 }
 
 // getting data
-db.collection('times').get().then(snapshot => {
+db.collection('items').get().then(snapshot => {
     snapshot.docs.forEach(doc => {
         renderCafe(doc);
     });
@@ -28,7 +28,7 @@ db.collection('times').get().then(snapshot => {
 // saving data
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    db.collection('times').add({
+    db.collection('items').add({
         name: form.name.value,
         amount: form.amount.value
     });

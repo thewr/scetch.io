@@ -6,7 +6,7 @@
 <body>
 <div class="container-fluid">
   <h1>Code Scratch</h1>
-  <form method="post">
+  <form>
 		<div class="form-group">
 			<label>Item</label>
     	<input type="text" name="iname" id="iname" />
@@ -33,6 +33,7 @@
     storageBucket: "sales-91e4c.appspot.com",
     messagingSenderId: "533687143173"
   };
+firebase.initializeApp(config);
 	
 function saveToFirebase(email) {
     var emailObject = {

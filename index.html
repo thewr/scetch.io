@@ -4,7 +4,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
 <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
-<script src="/sketch/jv/app.js"></script>
 <link rel="stylesheet" type="text/css" href="/sketch/css/main.css">
 </head>
 <body>
@@ -18,6 +17,22 @@
 	    
 	<ul id="cafe-list"></ul>
   </div>
+<script>
+// Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCntSwrxBash6pXzL9yaGCnQh0gQZPclG0",
+    authDomain: "sales-91e4c.firebaseapp.com",
+    databaseURL: "https://sales-91e4c.firebaseio.com",
+    projectId: "sales-91e4c",
+    storageBucket: "sales-91e4c.appspot.com",
+    messagingSenderId: "533687143173"
+  };
+firebase.initializeApp(config);
+	
+const db = firebase.firestore();
+db.settings({ timestampsInSnapshots: true }); 
+</script>
+<script src="/sketch/jv/app.js"></script>	
 </body>	
 </html>
 

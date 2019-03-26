@@ -1,6 +1,21 @@
 const cafeList = document.querySelector('#cafe-list');
 const form = document.querySelector('#add-cafe-form');
 
+// Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCntSwrxBash6pXzL9yaGCnQh0gQZPclG0",
+    authDomain: "sales-91e4c.firebaseapp.com",
+    databaseURL: "https://sales-91e4c.firebaseio.com",
+    projectId: "sales-91e4c",
+    storageBucket: "sales-91e4c.appspot.com",
+    messagingSenderId: "533687143173"
+  };
+firebase.initializeApp(config);
+	
+const db = firebase.firestore();
+db.settings({ timestampsInSnapshots: true }); 	
+
+
 // create element & render cafe
 function renderCafe(doc){
     let li = document.createElement('li');

@@ -11,6 +11,7 @@ let tblBody = document.createElement("tbody");
 
 // create element & render cafe
 function renderCafe(doc){
+    /*
     // creates a table row
     var row = document.createElement("tr");
     
@@ -23,7 +24,7 @@ function renderCafe(doc){
     var cellText = document.createTextNode(name,amount);
     cell.appendChild(cellText);
     row.appendChild(cell);
-    /*
+
     tbl.setAttribute('data-id', doc.id);
 
 
@@ -31,7 +32,7 @@ function renderCafe(doc){
     li.appendChild(amount);
 
     itemList.appendChild(li);
-*/
+
     // add the row to the end of the table body
     tblBody.appendChild(row);
    // put the <tbody> in the <table>
@@ -40,6 +41,7 @@ function renderCafe(doc){
   body.appendChild(tbl);
   // sets the border attribute of tbl to 2;
   tbl.setAttribute("border", "2");
+    */
 }
 
 // getting data

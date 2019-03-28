@@ -22,12 +22,12 @@ function renderCafe(doc){
     let amount = document.createElement('td');
     
     amount.textContent = doc.data().amount;
-    
-    var cell = document.createElement("td");
-    var cellText = document.createTextNode(name,amount);
-    */
-    cell.appendChild(cellText);
-    row.appendChild(cell);
+     */
+    //var cell = document.createElement("td");
+    var nameText = document.createTextNode(name);
+   
+    name.appendChild(nameText);
+    row.appendChild(name);
 /*
     
 

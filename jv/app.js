@@ -11,10 +11,10 @@ let tblBody = document.createElement("tbody");
 
 // create element & render cafe
 function renderCafe(doc){
-    /*
+    
     // creates a table row
     var row = document.createElement("tr");
-    
+    /*
     let name = document.createElement('td');
     let amount = document.createElement('td');
     name.textContent = doc.data().name;

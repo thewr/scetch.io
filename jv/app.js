@@ -14,18 +14,22 @@ function renderCafe(doc){
     
     // creates a table row
     var row = document.createElement("tr");
-    /*
-    let name = document.createElement('td');
-    let amount = document.createElement('td');
+    tbl.setAttribute('data-id', doc.id);
+    let name = document.createElement('td'); 
     name.textContent = doc.data().name;
+    
+    /*
+    let amount = document.createElement('td');
+    
     amount.textContent = doc.data().amount;
     
     var cell = document.createElement("td");
     var cellText = document.createTextNode(name,amount);
+    */
     cell.appendChild(cellText);
     row.appendChild(cell);
-
-    tbl.setAttribute('data-id', doc.id);
+/*
+    
 
 
     li.appendChild(name);

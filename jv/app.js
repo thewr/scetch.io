@@ -5,7 +5,7 @@ const form = document.querySelector('#add-item-form');
 // create element & render cafe
 function renderCafe(doc){
     let li = document.createElement('li');
-    let name = document.createElement('span');
+    let name = document.createElement('div');
     let amount = document.createElement('span');
 
     li.setAttribute('data-id', doc.id);

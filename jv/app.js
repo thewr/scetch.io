@@ -1,12 +1,12 @@
 const itemList = document.querySelector('#item-list');
 const form = document.querySelector('#add-item-form');
 
-    // get the reference for the body
-    var body = document.getElementsByTagName("body")[0];
+// get the reference for the body
+var body = document.getElementsByTagName("body")[0];
     
-    // creates a <table> element and a <tbody> element
-    let tbl = document.createElement('table');
-    let tblBody = document.createElement("tbody");
+// creates a <table> element and a <tbody> element
+let tbl = document.createElement('table');
+let tblBody = document.createElement("tbody");
     
 
 // create element & render cafe
@@ -14,8 +14,10 @@ function renderCafe(doc){
     // creates a table row
     var row = document.createElement("tr");
     
-    let name = document.createElement('span');
-    let amount = document.createElement('span');
+    let name = document.createElement('td');
+    let amount = document.createElement('td');
+    name.textContent = doc.data().name;
+    amount.textContent = doc.data().amount;
     
     var cell = document.createElement("td");
     var cellText = document.createTextNode(name,amount);
@@ -23,8 +25,7 @@ function renderCafe(doc){
     row.appendChild(cell);
     /*
     tbl.setAttribute('data-id', doc.id);
-    name.textContent = doc.data().name;
-    amount.textContent = doc.data().amount;
+
 
     li.appendChild(name);
     li.appendChild(amount);

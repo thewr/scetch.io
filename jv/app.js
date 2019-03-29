@@ -17,11 +17,11 @@ function renderCafe(doc){
     tbl.setAttribute('data-id', doc.id);
     let name = document.createElement('td'); 
     name.textContent = doc.data().name;
-    itemList.innerHTML = "!";
+    itemList.innerHTML = name.textContent;
     
     
-    let amount = document.createElement('td');
-    amount.textContent = doc.data().amount;
+  //  let amount = document.createElement('td');
+   // amount.textContent = doc.data().amount;
     /*
      */
     //var cell = document.createElement("td");

@@ -13,22 +13,22 @@ let tblBody = document.createElement("tbody");
 function renderCafe(doc){
     
     // creates a table row
-  //  var row = document.createElement("tr");
+    var row = document.createElement("tr");
     tbl.setAttribute('data-id', doc.id);
     let name = document.createElement('td'); 
     name.textContent = doc.data().name;
     itemList.innerHTML = "!";
     
-    /*
-    let amount = document.createElement('td');
     
+    let amount = document.createElement('td');
     amount.textContent = doc.data().amount;
+    /*
      */
     //var cell = document.createElement("td");
     var nameText = document.createTextNode(name);
    
     name.appendChild(nameText);
-  //  row.appendChild(name);
+    row.appendChild(name);
 /*
     
 

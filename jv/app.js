@@ -28,8 +28,8 @@ function renderCafe(doc){
      */
     var nameText = document.createTextNode(name);
     var amountText = document.createTextNode(amount);
-    name.appendChild(nameText);
-    amount.appendChild(amountText);
+    name.appendChild(name);
+    amount.appendChild(amount);
     row.appendChild(name);
     row.appendChild(amount);
 /*

@@ -40,16 +40,16 @@ function renderCafe(doc){
     li.appendChild(amount);
 
     itemList.appendChild(li);
-
+  */
     // add the row to the end of the table body  
-    */
+  
     tblBody.appendChild(row);
    // put the <tbody> in the <table>
     tbl.appendChild(tblBody);
   // appends <table> into <body>
     body.appendChild(tbl);
   // sets the border attribute of tbl to 2;
- // tbl.setAttribute("border", "2");
+    tbl.setAttribute("border", "2");
   
 }
 

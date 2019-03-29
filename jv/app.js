@@ -16,19 +16,22 @@ function renderCafe(doc){
     var row = document.createElement("tr");
     tbl.setAttribute('data-id', doc.id);
     let name = document.createElement('td'); 
+    let amount = document.createElement('td');
     name.textContent = doc.data().name;
+    amount.textContent = doc.data().amount;
    // itemList.innerHTML = name.textContent;
     
     
-  //  let amount = document.createElement('td');
-   // amount.textContent = doc.data().amount;
+    
+   
     /*
      */
-    //var cell = document.createElement("td");
     var nameText = document.createTextNode(name);
-   
+    var amountText = document.createTextNode(amount);
     name.appendChild(nameText);
+    amount.appendChild(amountText);
     row.appendChild(name);
+    row.appendChild(amount);
 /*
     
 

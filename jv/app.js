@@ -17,7 +17,7 @@ function renderCafe(doc){
     tbl.setAttribute('data-id', doc.id);
     let name = document.createElement('td'); 
     name.textContent = doc.data().name;
-    itemList.innerHTML = name.textContent;
+   // itemList.innerHTML = name.textContent;
     
     
   //  let amount = document.createElement('td');

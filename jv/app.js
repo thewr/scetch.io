@@ -40,9 +40,9 @@ function renderCafe(doc){
 
     // add the row to the end of the table body  
     */
-    tblBody.appendChild(row);
+ //   tblBody.appendChild(row);
    // put the <tbody> in the <table>
-  tbl.appendChild(tblBody);
+//  tbl.appendChild(tblBody);
   // appends <table> into <body>
   body.appendChild(tbl);
   // sets the border attribute of tbl to 2;

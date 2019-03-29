@@ -26,8 +26,8 @@ function renderCafe(doc){
    
     /*
      */
-    var nameText = document.createTextNode(name);
-    var amountText = document.createTextNode(amount);
+    //var nameText = document.createTextNode(name);
+   // var amountText = document.createTextNode(amount);
     name.appendChild(name);
     amount.appendChild(amount);
     row.appendChild(name);

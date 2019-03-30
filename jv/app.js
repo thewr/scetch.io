@@ -7,6 +7,13 @@ var body = document.getElementsByTagName("body")[0];
 // creates a <table> element and a <tbody> element
 let tbl = document.createElement('table');
 let tblBody = document.createElement("tbody");
+let row = document.createElement("tr");
+let title1 = document.createElement("th");
+let title2 = document.createElement("th");
+title1 = "Name";
+title2 = "Amount";
+row.appendChild(title1);
+row.appendChild(title2);
     
 var sum = 0;
 
@@ -14,7 +21,7 @@ var sum = 0;
 function renderCafe(doc){
     
     // creates a table row
-    var row = document.createElement("tr");
+  //  let row = document.createElement("tr");
     tbl.setAttribute('data-id', doc.id);
     let name = document.createElement('td'); 
     let amount = document.createElement('td');

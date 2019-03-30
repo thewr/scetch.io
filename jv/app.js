@@ -16,14 +16,17 @@ function renderCafe(doc){
     let row = document.createElement("tr");
     tbl.setAttribute('data-id', doc.id);
     let name = document.createElement('td'); 
+    let quantity = document.createElement('td'); 
     let amount = document.createElement('td');
     name.textContent = doc.data().name;
+    quantity.textContent = doc.data().quantity;
     amount.textContent = doc.data().amount;
     sum += parseFloat(doc.data().amount);
     itemSum.innerHTML = sum;
     
     // append row
     row.appendChild(name);
+    row.appendChild(quantity);
     row.appendChild(amount);
     
     // add the row to the end of the table body  
@@ -49,8 +52,10 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     db.collection('items').add({
         name: form.name.value,
+        quantity: form.quantity.value,
         amount: form.amount.value
     });
     form.name.value = '';
+    form.quantity.value = '';
     form.amount.value = '';
 });

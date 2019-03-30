@@ -8,6 +8,7 @@ var body = document.getElementsByTagName("body")[0];
 let tbl = document.createElement('table');
 let tblBody = document.createElement("tbody");
     
+var sum = 0;
 
 // create element & render cafe
 function renderCafe(doc){
@@ -19,6 +20,7 @@ function renderCafe(doc){
     let amount = document.createElement('td');
     name.textContent = doc.data().name;
     amount.textContent = doc.data().amount;
+    sum += doc.data().amount;
     itemList.innerHTML = 1;
     
     

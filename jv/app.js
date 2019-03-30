@@ -17,17 +17,19 @@ function renderCafe(doc){
     tbl.setAttribute('data-id', doc.id);
     let name = document.createElement('td'); 
     let quantity = document.createElement('td'); 
-    let amount = document.createElement('td');
+   // let amount = document.createElement('td');
+    let cost = document.createElement('td'); 
     name.textContent = doc.data().name;
-    quantity.textContent = doc.data().quantity;
-    amount.textContent = doc.data().amount;
+    //quantity.textContent = doc.data().quantity;
+   // amount.textContent = doc.data().amount;
+    cost.textContent = doc.data().amount*doc.data().quantity;
     sum += parseFloat(doc.data().amount)*parseFloat(doc.data().quantity);
     itemSum.innerHTML = sum;
     
     // append row
     row.appendChild(name);
    //row.appendChild(quantity);
-    row.appendChild(amount*quantity);
+    row.appendChild(cost);
     
     // add the row to the end of the table body  
     tblBody.appendChild(row);

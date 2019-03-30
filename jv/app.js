@@ -19,7 +19,7 @@ function renderCafe(doc){
     let amount = document.createElement('td');
     name.textContent = doc.data().name;
     amount.textContent = doc.data().amount;
-    itemList.innerHTML = "000";
+    itemList.val += 1;
     
     
     

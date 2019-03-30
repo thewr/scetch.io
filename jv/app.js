@@ -20,7 +20,7 @@ function renderCafe(doc){
    // let amount = document.createElement('td');
     let cost = document.createElement('td'); 
     name.textContent = doc.data().name;
-    //quantity.textContent = doc.data().quantity;
+    quantity.textContent = doc.data().quantity;
    // amount.textContent = doc.data().amount;
     cost.textContent = doc.data().amount*doc.data().quantity;
     sum += parseFloat(doc.data().amount)*parseFloat(doc.data().quantity);

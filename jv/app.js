@@ -21,7 +21,7 @@ function renderCafe(doc){
     name.textContent = doc.data().name;
     amount.textContent = doc.data().amount;
     sum += doc.data().amount;
-    itemList.innerHTML = 1;
+    itemList.innerHTML = sum;
     
     
     

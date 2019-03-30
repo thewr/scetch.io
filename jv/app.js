@@ -21,7 +21,7 @@ var sum = 0;
 function renderCafe(doc){
     
     // creates a table row
-  //  let row = document.createElement("tr");
+    let row = document.createElement("tr");
     tbl.setAttribute('data-id', doc.id);
     let name = document.createElement('td'); 
     let amount = document.createElement('td');

@@ -20,7 +20,7 @@ function renderCafe(doc){
     let amount = document.createElement('td');
     name.textContent = doc.data().name;
     amount.textContent = doc.data().amount;
-    sum += Integer.valueOf(doc.data().amount.textContent);
+    sum += int(doc.data().amount);
     itemList.innerHTML = sum;
     
     

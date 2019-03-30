@@ -21,13 +21,13 @@ function renderCafe(doc){
     name.textContent = doc.data().name;
     quantity.textContent = doc.data().quantity;
     amount.textContent = doc.data().amount;
-    sum += parseFloat(doc.data().amount);
+    sum += parseFloat(doc.data().amount)*parseFloat(doc.data().quantity);
     itemSum.innerHTML = sum;
     
     // append row
     row.appendChild(name);
-    row.appendChild(quantity);
-    row.appendChild(amount);
+   //row.appendChild(quantity);
+    row.appendChild(amount*quantity);
     
     // add the row to the end of the table body  
     tblBody.appendChild(row);

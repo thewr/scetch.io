@@ -1,4 +1,4 @@
-const itemList = document.querySelector('#item-list');
+const itemSum = document.querySelector('#item-sum');
 const form = document.querySelector('#add-item-form');
 
 // get the reference for the body
@@ -21,7 +21,7 @@ function renderCafe(doc){
     name.textContent = doc.data().name;
     amount.textContent = doc.data().amount;
     sum += parseFloat(doc.data().amount);
-    itemList.innerHTML = sum;
+    itemSum.innerHTML = sum;
     
     // append row
     row.appendChild(name);

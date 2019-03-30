@@ -8,12 +8,12 @@ var body = document.getElementsByTagName("body")[0];
 let tbl = document.createElement('table');
 let tblBody = document.createElement("tbody");
 let row = document.createElement("tr");
-let title1 = document.createElement("th");
-let title2 = document.createElement("th");
-title1 = "Name";
-title2 = "Amount";
-row.appendChild(title1);
-row.appendChild(title2);
+//let title1 = document.createElement("th");
+//let title2 = document.createElement("th");
+//title1 = "Name";
+//title2 = "Amount";
+//row.appendChild(title1);
+//row.appendChild(title2);
     
 var sum = 0;
 

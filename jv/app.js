@@ -28,7 +28,7 @@ function renderCafe(doc){
     
     // append row
     row.appendChild(name);
-   //row.appendChild(quantity);
+    row.appendChild(quantity);
     row.appendChild(cost);
     
     // add the row to the end of the table body  

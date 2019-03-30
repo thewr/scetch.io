@@ -1,3 +1,9 @@
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
+  });
+});
+
 const itemSum = document.querySelector('#item-sum');
 const form = document.querySelector('#add-item-form');
 

@@ -62,7 +62,8 @@ db.collection('items').get().then(snapshot => {
 
 // saving data
 form.addEventListener('submit', (e) => {
-  if((form.name.value = ''))
+  var x 
+  if(form.name.value == '')
   {
     e.preventDefault();
   }

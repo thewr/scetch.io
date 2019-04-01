@@ -67,6 +67,6 @@ form.addEventListener('submit', (e) => {
         name: form.name.value,
         amount: form.amount.value
     });
-    form.name.value = '';
-    form.amount.value = '';
+   // form.name.value = '';
+  //  form.amount.value = '';
 });

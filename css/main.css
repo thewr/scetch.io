@@ -24,7 +24,7 @@ h1{
     max-width: 960px;
     margin: 30px auto;
     padding:  20px 30px;
-    border-radius: 10px 120px 10px 10px;
+  //  border-radius: 10px 120px 10px 10px;
 }
 table{
     text-align: center;

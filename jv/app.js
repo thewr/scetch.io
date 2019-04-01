@@ -1,6 +1,7 @@
 $(function(){
+  $(".content").hide();
   $("#add_item_button").click(function(){
-    $(".content").hide();
+    $(".content").show();
     $("#add_item_button").hide();
   });
 });

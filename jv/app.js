@@ -4,6 +4,10 @@ $(function(){
     $(".content").hide().fadeIn(1000);
     $("#add_item_button").hide();
   });
+  $('#item_submit').click(function(){
+    $(".content").show().fadeOut(1000);
+    $("add_item_button").show();
+  });
 });
 
 const itemSum = document.querySelector('#item-sum');

@@ -84,6 +84,7 @@ li div{
     cursor:  pointer;
 }
 
+/*
 form input{
     float: left;
     width: 50%;
@@ -96,7 +97,6 @@ form input{
     font-size: 18px;
 }
 
-/*
 form input:focus{
     outline: none;
     border-bottom: 3px solid #88236f;

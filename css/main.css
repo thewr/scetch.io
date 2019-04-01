@@ -96,12 +96,14 @@ form input{
     font-size: 18px;
 }
 
+/*
 form input:focus{
     outline: none;
     border-bottom: 3px solid #88236f;
     padding-bottom: 8px;
     transition: all ease 0.2s;
 }
+*/
 
 form:after{
     content: '';

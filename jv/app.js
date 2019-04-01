@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $("button").click(function(){
-    $("#add-item-form").hide();
+    $(".content").hide();
   });
 });
 

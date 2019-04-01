@@ -66,14 +66,9 @@ li span:nth-child(2){
     color: #999;
 }
 
-label {
+form label {
   text-transform: uppercase;
   position: relative;
-}
-
-input,
-label {
-  display: block;
 }
 
 li div{
@@ -90,11 +85,10 @@ li div{
 
 form input{
     float: left;
-    width: 34%;
+    width: 50%;
     margin: 0;
     border: 0;
     border-bottom: 1px solid #eee;
-    margin: 0;
     padding: 20px;
     display: block;
     box-sizing: border-box;

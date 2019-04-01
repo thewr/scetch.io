@@ -28,20 +28,19 @@ function renderCafe(doc){
     let row = document.createElement("tr");
     tbl.setAttribute('data-id', doc.id);
     let name = document.createElement('td'); 
-    let quantity = document.createElement('td'); 
-   // let amount = document.createElement('td');
-    let cost = document.createElement('td'); 
+   // let quantity = document.createElement('td'); 
+    let amount = document.createElement('td');
+   // let cost = document.createElement('td'); 
     name.textContent = doc.data().name;
-    quantity.textContent = doc.data().quantity;
-   // amount.textContent = doc.data().amount;
-    cost.textContent = doc.data().amount*doc.data().quantity;
-    sum += parseFloat(doc.data().amount)*parseFloat(doc.data().quantity);
-    itemSum.innerHTML = sum;
+   // quantity.textContent = doc.data().quantity;
+    amount.textContent = doc.data().amount;
+   // cost.textContent = doc.data().amount*doc.data().quantity;
+   // sum += parseFloat(doc.data().amount)*parseFloat(doc.data().quantity);
+   // itemSum.innerHTML = sum;
     
     // append row
     row.appendChild(name);
-    row.appendChild(quantity);
-    row.appendChild(cost);
+    row.appendChild(amount);
     
     // add the row to the end of the table body  
     tblBody.appendChild(row);
@@ -66,10 +65,8 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     db.collection('items').add({
         name: form.name.value,
-        quantity: form.quantity.value,
         amount: form.amount.value
     });
     form.name.value = '';
-    form.quantity.value = '';
     form.amount.value = '';
 });

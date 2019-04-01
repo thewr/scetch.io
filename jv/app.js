@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("button").click(function(){
+  $("#add_item_button").click(function(){
     $(".content").hide();
   });
 });

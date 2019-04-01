@@ -69,6 +69,7 @@ li span:nth-child(2){
 form label {
   text-transform: uppercase;
   position: relative;
+    display: block;
 }
 
 li div{

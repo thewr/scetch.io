@@ -3,6 +3,10 @@ body {
     font-family: ubuntu;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1{
     color: #fff;
     font-size: 64px;

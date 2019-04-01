@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
   $("#add_item_button").click(function(){
     $(".content").hide();
   });

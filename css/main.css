@@ -63,6 +63,16 @@ li span:nth-child(2){
     color: #999;
 }
 
+label {
+  text-transform: uppercase;
+  position: relative;
+}
+
+input,
+label {
+  display: block;
+}
+
 li div{
     position: absolute;
     top: 0;

@@ -1,7 +1,7 @@
 $(function(){
   $(".content").hide();
   $("#add_item_button").click(function(){
-    $(".content").show();
+    $(".content").hide().fadeIn(1000);
     $("#add_item_button").hide();
   });
 });

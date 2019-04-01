@@ -62,17 +62,11 @@ db.collection('items').get().then(snapshot => {
 
 // saving data
 form.addEventListener('submit', (e) => {
-  if(form.name.value == '')
-  {
     e.preventDefault();
-  }
-  else
-  {
     db.collection('items').add({
         name: form.name.value,
         amount: form.amount.value
     });
       form.name.value = '';
       form.amount.value = '';
-  }
 });

@@ -36,7 +36,6 @@ h1{
 }
 
 #item-list td, #item-list th {
-  background-color: white;  
   border: 1px solid #ddd;
   padding: 8px;
 }

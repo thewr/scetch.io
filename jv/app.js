@@ -19,7 +19,6 @@ function myFunction() {
   cell.innerHTML = "<b>This is a table header</b>";
 }
 
-const itemSum = document.querySelector('#item-sum');
 const itemList = document.querySelector('#item-list');
 const form = document.querySelector('#add-item-form');
 
@@ -36,7 +35,7 @@ function renderCafe(doc){
     
     // creates a table row
     let row = document.createElement("tr");
-    tbl.setAttribute('data-id', doc.id);
+    itemList.setAttribute('data-id', doc.id);
     let name = document.createElement('td'); 
     let amount = document.createElement('td');
     let subject = document.createElement('td');

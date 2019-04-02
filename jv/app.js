@@ -26,7 +26,7 @@ const form = document.querySelector('#add-item-form');
 var body = document.getElementsByTagName("body")[0];
     
 // creates a <table> element and a <tbody> element
-let tbl = document.createElement('table');
+let tbl = document.getElementById("#myTable");//createElement('#myTable"\'table');
 let tblBody = document.createElement("tbody");    
 var sum = 0;
 

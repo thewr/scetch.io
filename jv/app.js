@@ -27,7 +27,7 @@ const form = document.querySelector('#add-item-form');
 var body = document.getElementsByTagName("body")[0];
     
 // creates a <table> element and a <tbody> element
-let tbl = document.getElementById('table');
+//let tbl = document.getElementById('table');
 let tblBody = document.createElement("tbody");    
 var sum = 0;
 
@@ -56,11 +56,11 @@ function renderCafe(doc){
     tblBody.appendChild(row);
     
     // put the <tbody> in the <table>
-    tbl.appendChild(tblBody);
+    itemList.appendChild(tblBody);
   // appends <table> into <body>
-    body.appendChild(tbl);
+    body.appendChild(itemList);
   // sets the border attribute of tbl to 2;
-    tbl.setAttribute("border", "2");
+    itemList.setAttribute("border", "2");
 }
 
 // getting data

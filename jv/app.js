@@ -1,5 +1,5 @@
 $(function(){
-  myFunction();
+//  myFunction();
   $(".content").hide();
   $("#add_item_button").click(function(){
     $(".content").hide().fadeIn(1000);

@@ -2,9 +2,6 @@ body {
     background-color: black;
     font-family: ubuntu;
 }
-* {
-  box-sizing: border-box;
-}
 
 h1{
     color: #fff;

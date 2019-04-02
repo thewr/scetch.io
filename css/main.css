@@ -33,13 +33,12 @@ h1{
   width: 100%;
 }
 
-#item-list td, #customers th {
-  background-color: #white;
+#item-list td, #item-list th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#item-list tr:nth-child(even){background-color: #ccc;}
+#item-list tr:nth-child(even){background-color: #f2f2f2;}
 
 #item-list tr:hover {background-color: #ddd;}
 

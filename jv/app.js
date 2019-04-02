@@ -28,12 +28,11 @@ function renderCafe(doc){
     let row = document.createElement("tr");
     tbl.setAttribute('data-id', doc.id);
     let name = document.createElement('td'); 
-   // let quantity = document.createElement('td'); 
     let amount = document.createElement('td');
-   // let cost = document.createElement('td'); 
+    let subject = document.createElement('td');
     name.textContent = doc.data().name;
-   // quantity.textContent = doc.data().quantity;
     amount.textContent = doc.data().amount;
+    subject.textContent = doc.data().subject;
    // cost.textContent = doc.data().amount*doc.data().quantity;
    // sum += parseFloat(doc.data().amount)*parseFloat(doc.data().quantity);
    // itemSum.innerHTML = sum;
@@ -41,6 +40,7 @@ function renderCafe(doc){
     // append row
     row.appendChild(name);
     row.appendChild(amount);
+    row.appendChild(subject);
     
     // add the row to the end of the table body  
     tblBody.appendChild(row);
@@ -65,8 +65,10 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     db.collection('items').add({
         name: form.name.value,
-        amount: form.amount.value
+        amount: form.amount.value,
+        subject: form.subject.value
     });
       form.name.value = '';
       form.amount.value = '';
+      form.subject.value = '';
 });

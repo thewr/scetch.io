@@ -19,16 +19,15 @@ function myFunction() {
   cell.innerHTML = "<b>This is a table header</b>";
 }
 
+// creates a <table> element and a <tbody> element
 const itemList = document.querySelector('#item-list');
-const form = document.querySelector('#add-item-form');
-
+let tblBody = document.createElement("tbody");    
 // get the reference for the body
 var body = document.getElementsByTagName("body")[0];
-    
-// creates a <table> element and a <tbody> element
-//let tbl = document.getElementById('table');
-let tblBody = document.createElement("tbody");    
-var sum = 0;
+
+// create form element
+const form = document.querySelector('#add-item-form');
+
 
 // create element & render cafe
 function renderCafe(doc){
@@ -42,9 +41,6 @@ function renderCafe(doc){
     name.textContent = doc.data().name;
     amount.textContent = doc.data().amount;
     subject.textContent = doc.data().subject;
-   // cost.textContent = doc.data().amount*doc.data().quantity;
-   // sum += parseFloat(doc.data().amount)*parseFloat(doc.data().quantity);
-   // itemSum.innerHTML = sum;
     
     // append row
     row.appendChild(name);
@@ -57,9 +53,9 @@ function renderCafe(doc){
     // put the <tbody> in the <table>
     itemList.appendChild(tblBody);
   // appends <table> into <body>
-    body.appendChild(itemList);
+ //   body.appendChild(itemList);
   // sets the border attribute of tbl to 2;
-    itemList.setAttribute("border", "2");
+   //itemList.setAttribute("border", "2");
 }
 
 // getting data

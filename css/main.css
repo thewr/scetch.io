@@ -2,7 +2,6 @@ body {
     background-color: black;
     font-family: ubuntu;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -34,6 +33,7 @@ h1{
 }
 
 #item-list td, #item-list th {
+  background-color: white;  
   border: 1px solid #ddd;
   padding: 8px;
 }

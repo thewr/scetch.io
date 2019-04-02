@@ -1,5 +1,4 @@
 $(function(){
-//  myFunction();
   $(".content").hide();
   $("#add_item_button").click(function(){
     $(".content").hide().fadeIn(1000);
@@ -10,14 +9,6 @@ $(function(){
    // $("add_item_button").show();
   });
 });
-
-function myFunction() {
-  var table = document.getElementById("myTable");
-  var header = table.createTHead();
-  var row = header.insertRow(0);
-  var cell = row.insertCell(0);
-  cell.innerHTML = "<b>This is a table header</b>";
-}
 
 // creates a <table> element and a <tbody> element
 const itemList = document.querySelector('#item-list');

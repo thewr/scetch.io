@@ -20,13 +20,14 @@ function myFunction() {
 }
 
 const itemSum = document.querySelector('#item-sum');
+const itemList = document.querySelector('#item-list');
 const form = document.querySelector('#add-item-form');
 
 // get the reference for the body
 var body = document.getElementsByTagName("body")[0];
     
 // creates a <table> element and a <tbody> element
-let tbl = document.getElementById("#myTable");//createElement('#myTable"\'table');
+let tbl = document.getElementById('table');
 let tblBody = document.createElement("tbody");    
 var sum = 0;
 

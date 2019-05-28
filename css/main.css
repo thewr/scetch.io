@@ -37,21 +37,36 @@ h1{
   width: 100%;
 }
 
-#item-list td, #item-list th {
-  border: 1px solid #ddd;
-  padding: 8px;
+//#item-list tr:nth-child(even){background-color: #f2f2f2;}
+
+//#item-list tr:hover {background-color: #ddd;}
+
+#item-list li span{
+    color:#3c1231;
+    font-weight: 400;
+    display: block;
+    font-size: 14px;
+
+    font-size-adjust:auto;
 }
 
-#item-list tr:nth-child(even){background-color: #f2f2f2;}
+#item-list label{
+   color:black; 
+   text-align: center; 
+   display: block; 
+   font-weight: bold;
+}
 
-#item-list tr:hover {background-color: #ddd;}
-
-#item-list th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #444c43;
-  color: white;
+li div{
+    display: block;
+    position: absolute;
+    color:#3c1231;
+    top: 3px; right: 3px;
+    text-align: center;
+    //border-bottom: 1px solid black;
+    //border-left: 1px solid black;
+    font-size: 14px;
+    cursor:  pointer;
 }
 
 form label {

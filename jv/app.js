@@ -50,7 +50,10 @@ function renderCafe(doc){
 }
 
 // getting data
-db.collection('items').get().then(snapshot => {
+db.collection('items')
+  .orderBy('name','desc')
+  .get()
+  .then(snapshot => {
     snapshot.docs.forEach(doc => {
         renderCafe(doc);
     });

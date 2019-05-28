@@ -23,30 +23,26 @@ const form = document.querySelector('#add-item-form');
 // create element & render cafe
 function renderCafe(doc){
     
-    // creates a table row
-    let row = document.createElement("tr");
-    itemList.setAttribute('data-id', doc.id);
-    let name = document.createElement('td'); 
-    let amount = document.createElement('td');
-    let subject = document.createElement('td');
+    // create the list item
+    let li = document.createElement("li");
+    li.setAttribute('data-id', doc.id);  //Each document gets an id.
+    let name = document.createElement('span'); 
+    let amount = document.createElement('span');
+    let subject = document.createElement('span');
+  
+    // get the content
     name.textContent = doc.data().name;
     amount.textContent = doc.data().amount;
     subject.textContent = doc.data().subject;
     
     // append row
-    row.appendChild(name);
-    row.appendChild(amount);
-    row.appendChild(subject);
+    li.appendChild(name);
+    li.appendChild(amount);
+    li.appendChild(subject);
     
-    // add the row to the end of the table body  
-    tblBody.appendChild(row);
-    
-    // put the <tbody> in the <table>
-    itemList.appendChild(tblBody);
-  // appends <table> into <body>
- //   body.appendChild(itemList);
-  // sets the border attribute of tbl to 2;
-   //itemList.setAttribute("border", "2");
+    // insert the list item into body
+    itemList.appendChild(li);
+
 }
 
 // getting data

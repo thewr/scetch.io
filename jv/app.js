@@ -51,7 +51,7 @@ function renderCafe(doc){
 
 // getting data
 db.collection('items')
-  .orderBy('name','desc')
+  .orderBy('name','asc')
   .get()
   .then(snapshot => {
     snapshot.docs.forEach(doc => {
